@@ -63,9 +63,9 @@
                     VALUES ('$name', '$password')";
 
                     if ($conn->query($sql) === TRUE) {
-                        echo "User inerted successfully";
+                        echo "User inserted successfully";
                     } else {
-                        echo "error when inserting the user: " . $conn->error;
+                        echo "Error when inserting the user: " . $conn->error;
                     }
                 } else {
                     echo "<br>";
